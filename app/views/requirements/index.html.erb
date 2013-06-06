@@ -1,0 +1,33 @@
+<h1>Listing requirements</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Sf amount</th>
+    <th>Sf price</th>
+    <th>Monthly price</th>
+    <th>Location</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requirements.each do |requirement| %>
+  <tr>
+    <td><%= requirement.user_id %></td>
+    <td><%= requirement.sf_amount %></td>
+    <td><%= requirement.sf_price %></td>
+    <td><%= requirement.monthly_price %></td>
+    <td><%= requirement.location %></td>
+    <td><%= requirement.note %></td>
+    <td><%= link_to 'Show', requirement %></td>
+    <td><%= link_to 'Edit', edit_requirement_path(requirement) %></td>
+    <td><%= link_to 'Destroy', requirement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Requirement', new_requirement_path %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Style:</b>
+  <%= @requirement_style.style_id %>
+</p>
+
+<p>
+  <b>Requirement:</b>
+  <%= @requirement_style.requirement_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_requirement_style_path(@requirement_style) %> |
+<%= link_to 'Back', requirement_styles_path %>

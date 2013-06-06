@@ -1,0 +1,41 @@
+<%= form_for(@requirement) do |f| %>
+  <% if @requirement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@requirement.errors.count, "error") %> prohibited this requirement from being saved:</h2>
+
+      <ul>
+      <% @requirement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sf_amount %><br />
+    <%= f.number_field :sf_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :sf_price %><br />
+    <%= f.text_field :sf_price %>
+  </div>
+  <div class="field">
+    <%= f.label :monthly_price %><br />
+    <%= f.number_field :monthly_price %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

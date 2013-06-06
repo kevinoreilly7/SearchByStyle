@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @requirement.user_id %>
+</p>
+
+<p>
+  <b>Sf amount:</b>
+  <%= @requirement.sf_amount %>
+</p>
+
+<p>
+  <b>Sf price:</b>
+  <%= @requirement.sf_price %>
+</p>
+
+<p>
+  <b>Monthly price:</b>
+  <%= @requirement.monthly_price %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @requirement.location %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @requirement.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_requirement_path(@requirement) %> |
+<%= link_to 'Back', requirements_path %>

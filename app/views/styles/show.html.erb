@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Exterior:</b>
+  <%= @style.exterior %>
+</p>
+
+<p>
+  <b>Interior:</b>
+  <%= @style.interior %>
+</p>
+
+<p>
+  <b>People:</b>
+  <%= @style.people %>
+</p>
+
+<p>
+  <b>Amenity:</b>
+  <%= @style.amenity %>
+</p>
+
+
+<%= link_to 'Edit', edit_style_path(@style) %> |
+<%= link_to 'Back', styles_path %>

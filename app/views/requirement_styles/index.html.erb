@@ -1,0 +1,25 @@
+<h1>Listing requirement_styles</h1>
+
+<table>
+  <tr>
+    <th>Style</th>
+    <th>Requirement</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requirement_styles.each do |requirement_style| %>
+  <tr>
+    <td><%= requirement_style.style_id %></td>
+    <td><%= requirement_style.requirement_id %></td>
+    <td><%= link_to 'Show', requirement_style %></td>
+    <td><%= link_to 'Edit', edit_requirement_style_path(requirement_style) %></td>
+    <td><%= link_to 'Destroy', requirement_style, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Requirement style', new_requirement_style_path %>

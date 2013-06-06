@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  exterior: false
+  interior: false
+  people: false
+  amenity: false
+
+two:
+  exterior: false
+  interior: false
+  people: false
+  amenity: false
